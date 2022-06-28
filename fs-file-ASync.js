@@ -7,9 +7,9 @@ readFile(`./content/firstFile.txt`,`utf8`,(err,result) => {
     }
     const fileContent1 = result;
     console.log(fileContent1);
-    readFile(`./content/secondFile.txt`,`utf8`,(err,result) => {
+    readFile(`./content/secondFile.txt`,`utf8`,(error,result) => {
         if(err){
-            console.log(err);
+            console.log(error);
             return;
         }
         const fileContent2 = result;
