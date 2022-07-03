@@ -12,7 +12,8 @@ const readTextData = (filePath) => {
     })
 };
 
-readTextData(`./content/secondFile.txt`).then((data) => {
+readTextData(`./content/secondFile.txt`)
+.then((data) => {
     console.log(data);
 }).catch((err) => {
     console.error(err);
