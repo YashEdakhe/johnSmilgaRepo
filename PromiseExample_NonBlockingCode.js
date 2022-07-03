@@ -12,13 +12,6 @@ const readTextData = (filePath) => {
     })
 };
 
-readTextData(`./content/secondFile.txt`)
-.then((data) => {
-    console.log(data);
-}).catch((err) => {
-    console.error(err);
-})
-
 //Probable Chances of Callback hell.
 // readFile('./content/firstFile.txt',`utf8`, (err, data) => {
 //     if(err){
